@@ -4,3 +4,11 @@
 .heading-header{
     font-family: 'Berkshire Swash', cursive;
 }
+
+.middle{ 
+    vertical-align: middle;
+}
+
+label:not(:last-child):after{
+    content: "  . ";
+}
