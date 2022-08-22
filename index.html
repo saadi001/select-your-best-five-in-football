@@ -163,20 +163,20 @@
                     <div class="text-gray-400 leading-2 ">Per player</div>
                     <div><input id="per-player" class="p-1 bg-black border border-inherit text-white" type="text" size="10"></div>
                 </div>
-                <button class="bg-teal-600 hover:bg-teal-500 w-full py-2 mb-3 text-white">Calculate</button>
-                <p class="text-center py-2 text-gray-400 text-base mb-3">Player Expenses $<span>5000</span></p>
+                <button onclick="calcuteExpense()" class="bg-teal-600 hover:bg-teal-500 w-full py-2 mb-3 text-white">Calculate</button>
+                <p class="text-center py-2 text-gray-400 text-base mb-3">Player Expenses $<span id="player-expense">00</span></p>
                 <div class="flex justify-between px-2 mb-2">
                     <div class="text-gray-400">Manager</div>
                     <div><input id="manager-amount" class="p-1 bg-black border border-inherit text-white" type="text" size="10"></div>
                 </div>
                 <div class="flex justify-between px-2 mb-4">
                     <div class="text-gray-400 ">Coach</div>
-                    <div><input class="p-1 bg-black border border-inherit text-white" type="text" size="10"></div>
+                    <div><input id="coach-amount" class="p-1 bg-black border border-inherit text-white" type="text" size="10"></div>
                 </div>
-                <button class="bg-teal-600 hover:bg-teal-500 w-full py-2 mb-5 text-white">Calculate Total</button>
+                <button id="total-calulation" class="bg-teal-600 hover:bg-teal-500 w-full py-2 mb-5 text-white">Calculate Total</button>
                 <div class="flex justify-between ">
                     <p class="text-gray-400">Total</p>
-                    <p class="text-amber-600 font-bold">$11000</p>
+                    <p class="text-amber-600 font-bold">$<span id="total">00</span></p>
                 </div>
 
             </div>

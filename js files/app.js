@@ -26,14 +26,17 @@ function addPlayerName(element) {
     const pnames = {
         playerName: playerName
     }
+
+    if(nameBox.length > 4){
+        alert('You can not selected more than Five');
+        return;
+    }
+
     nameBox.push(pnames);
     displayname();
     element.setAttribute('disabled',true);
 
-    if(nameBox.length > 5){
-        alert('You can not selected more than Five');
-        return;
-    }
+    
     
 }
 
@@ -55,5 +58,27 @@ function elementField(elementId){
 // function for calcute expense button 
 function calcuteExpense(){
     const totalnames = nameBox.length;
-    const perPlayerAmount = 
+    const perPlayerAmount = inputField('per-player');
+    // checking NaN and minus value 
+    if(isNaN(perPlayerAmount) || perPlayerAmount<0){
+        alert('Please provide valid input!');
+        return;
+    }
+
+    const playerExpense = totalnames * perPlayerAmount;
+    document.getElementById('player-expense').innerText = playerExpense;
 }
+// evenhaldle listener for total calculation 
+document.getElementById('total-calulation').addEventListener('click',function(){
+    const subTotal = elementField('player-expense');
+    const managerMoney = inputField('manager-amount');
+    const coachMoney = inputField('coach-amount');
+    // checking NaN and minus value 
+    if(isNaN(managerMoney) || isNaN(coachMoney) || managerMoney<0 || coachMoney<0){
+        alert('please provide a valid input!')
+        return;
+    }
+    const totalMoney = subTotal + managerMoney + coachMoney;
+
+    document.getElementById('total').innerText = totalMoney;
+})
