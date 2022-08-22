@@ -19,7 +19,7 @@
         <div class="grid grid-cols-4 bg-black text-white ">
             <div class="pt-24"><img src="images/bappi with logo.png" alt=""></div>
             <div class="col-span-2 flex justify-center flex-col text-center w-9/12 mx-auto">
-                <h1 class=" text-6xl mb-10 text-amber-600 heading-header">Select Your Best Five</h1>
+                <h1 class=" text-5xl mb-10 text-amber-600 heading-header">What's Your PSG Top-V</h1>
                 <p>This is a website we make for calculate football players salary and calculate the total cost with
                     coach and players. You will also able to select your best player. We will attach world cup updates
                     too. So, please stay tune!</p>
@@ -41,11 +41,14 @@
                     <div class="flex justify-center">
                         <div class="text-base mb-4 text-gray-400">
                             <!-- <p style="vertical-align:middle ;">36 goal . 120 assists</p> -->
-                            <label><p class="middle inline">36 goal</p></label>
+                            <label>
+                                <p class="middle inline">36 goal</p>
+                            </label>
                             <label><a class="middle " href="#">60 assists</a></label>
                         </div>
                     </div>
-                    <button class="text-white w-full bg-teal-600 hover:bg-teal-500 py-2 font-bold ">SELECT</button>
+                    <button onclick="addPlayerName(this)"
+                        class="text-white w-full bg-teal-600 hover:bg-teal-500 py-2 font-bold ">SELECT</button>
                 </div>
             </div>
             <!-- card 2 -->
@@ -56,11 +59,14 @@
                     <div class="flex justify-center">
                         <div class="text-base mb-4 text-gray-400">
                             <!-- <p style="vertical-align:middle ;">36 goal . 120 assists</p> -->
-                            <label><p class="middle inline">26 goal</p></label>
+                            <label>
+                                <p class="middle inline">26 goal</p>
+                            </label>
                             <label><a class="middle " href="#">20 assists</a></label>
                         </div>
                     </div>
-                    <button class="text-white w-full bg-teal-600 hover:bg-teal-500 py-2 font-bold ">SELECT</button>
+                    <button onclick="addPlayerName(this)"
+                        class="text-white w-full bg-teal-600 hover:bg-teal-500 py-2 font-bold ">SELECT</button>
                 </div>
             </div>
             <!-- card 3 -->
@@ -71,16 +77,28 @@
                     <div class="flex justify-center">
                         <div class="text-base mb-4 text-gray-400">
                             <!-- <p style="vertical-align:middle ;">36 goal . 120 assists</p> -->
-                            <label><p class="middle inline">36 goal</p></label>
+                            <label>
+                                <p class="middle inline">36 goal</p>
+                            </label>
                             <label><a class="middle " href="#">10 assists</a></label>
                         </div>
                     </div>
-                    <button class="text-white w-full bg-teal-600 hover:bg-teal-500 py-2 font-bold ">SELECT</button>
+                    <button onclick="addPlayerName(this)"
+                        class="text-white w-full bg-teal-600 hover:bg-teal-500 py-2 font-bold ">SELECT</button>
                 </div>
             </div>
             <!-- card 4 -->
-            <div class="max-w-sm bg-black overflow-hidden shadow-lg">
-                <h3 class="text-white text-2xl text-center p-2 font-bold">Selected-V</h3>
+            <div class="max-w-sm bg-black overflow-hidden shadow-lg p-5">
+                <div class="">
+                    <h3 class="text-white text-2xl text-center font-bold mb-5">Selected-V</h3>
+                </div>
+                <div>
+                    <table class=" w-full bg-black text-white">
+                        <tbody id="products-cart">
+                           
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
             <!-- row 2 -->
@@ -88,15 +106,18 @@
             <div class="max-w-sm bg-black overflow-hidden shadow-lg">
                 <img class="w-full" src="images/ashraf-hakimi600x700.jpg" alt="Sunset in the mountains">
                 <div class="px-6 py-4">
-                    <div class="font-bold text-3xl text-white mb-2 text-center">Achraf Hakimi</div>
+                    <div class="font-bold text-3xl text-white mb-2 text-center">Hakimi</div>
                     <div class="flex justify-center">
                         <div class="text-base mb-4 text-gray-400">
                             <!-- <p style="vertical-align:middle ;">36 goal . 120 assists</p> -->
-                            <label><p class="middle inline">15 goal</p></label>
+                            <label>
+                                <p class="middle inline">15 goal</p>
+                            </label>
                             <label><a class="middle " href="#">16 assists</a></label>
                         </div>
                     </div>
-                    <button class="text-white w-full bg-teal-600 hover:bg-teal-500 py-2 font-bold ">SELECT</button>
+                    <button onclick="addPlayerName(this)"
+                        class="text-white w-full bg-teal-600 hover:bg-teal-500 py-2 font-bold ">SELECT</button>
                 </div>
             </div>
             <!-- card 2.2 -->
@@ -107,11 +128,14 @@
                     <div class="flex justify-center">
                         <div class="text-base mb-4 text-gray-400">
                             <!-- <p style="vertical-align:middle ;">36 goal . 120 assists</p> -->
-                            <label><p class="middle inline">30 goal</p></label>
+                            <label>
+                                <p class="middle inline">30 goal</p>
+                            </label>
                             <label><a class="middle " href="#">10 assist</a></label>
                         </div>
                     </div>
-                    <button class="text-white w-full bg-teal-600 hover:bg-teal-500 py-2 font-bold ">SELECT</button>
+                    <button onclick="addPlayerName(this)"
+                        class="text-white w-full bg-teal-600 hover:bg-teal-500 py-2 font-bold ">SELECT</button>
                 </div>
             </div>
             <!-- card 2.3 -->
@@ -122,36 +146,39 @@
                     <div class="flex justify-center">
                         <div class="text-base mb-4 text-gray-400">
                             <!-- <p style="vertical-align:middle ;">36 goal . 120 assists</p> -->
-                            <label><p class="middle inline">12 goal</p></label>
+                            <label>
+                                <p class="middle inline">12 goal</p>
+                            </label>
                             <label><a class="middle " href="#">10 Assist</a></label>
                         </div>
                     </div>
-                    <button class="text-white w-full bg-teal-600 hover:bg-teal-500 py-2 font-bold ">SELECT</button>
+                    <button onclick="addPlayerName(this)"
+                        class="text-white w-full bg-teal-600 hover:bg-teal-500 py-2 font-bold ">SELECT</button>
                 </div>
             </div>
             <!-- card 2.4 -->
             <div class="max-w-sm bg-black overflow-hidden shadow-lg p-3 ">
                 <h3 class="text-white text-2xl text-center font-bold mb-3 ">Budget</h3>
                 <div class="flex justify-between px-2 mb-3">
-                    <div class="text-gray-400 leading-4 ">Per player</div>
-                    <div><input class="p-1 bg-black border border-inherit text-white" type="text" size="10"></div> 
+                    <div class="text-gray-400 leading-2 ">Per player</div>
+                    <div><input class="p-1 bg-black border border-inherit text-white" type="text" size="10"></div>
                 </div>
-                <button class="bg-teal-600 hover:bg-teal-500 w-full py-2 mb-3">Calculate</button>
-                <p class="text-center py-2 text-gray-400 text-base mb-3">Player Expenses  $<span>5000</span></p>
+                <button class="bg-teal-600 hover:bg-teal-500 w-full py-2 mb-3 text-white">Calculate</button>
+                <p class="text-center py-2 text-gray-400 text-base mb-3">Player Expenses $<span>5000</span></p>
                 <div class="flex justify-between px-2 mb-2">
                     <div class="text-gray-400">Manager</div>
-                    <div><input class="p-1 bg-black border border-inherit text-white" type="text" size="10"></div> 
+                    <div><input class="p-1 bg-black border border-inherit text-white" type="text" size="10"></div>
                 </div>
                 <div class="flex justify-between px-2 mb-4">
                     <div class="text-gray-400 ">Coach</div>
-                    <div><input class="p-1 bg-black border border-inherit text-white" type="text" size="10"></div> 
+                    <div><input class="p-1 bg-black border border-inherit text-white" type="text" size="10"></div>
                 </div>
-                <button class="bg-teal-600 hover:bg-teal-500 w-full py-2 mb-5">Calculate Total</button>
+                <button class="bg-teal-600 hover:bg-teal-500 w-full py-2 mb-5 text-white">Calculate Total</button>
                 <div class="flex justify-between ">
                     <p class="text-gray-400">Total</p>
                     <p class="text-amber-600 font-bold">$11000</p>
                 </div>
-                
+
             </div>
 
             <!-- row 3 -->
@@ -163,48 +190,58 @@
                     <div class="flex justify-center">
                         <div class="text-base mb-4 text-gray-400">
                             <!-- <p style="vertical-align:middle ;">36 goal . 120 assists</p> -->
-                            <label><p class="middle inline">4 goal</p></label>
+                            <label>
+                                <p class="middle inline">4 goal</p>
+                            </label>
                             <label><a class="middle " href="#">5 assist</a></label>
                         </div>
                     </div>
-                    <button class="text-white w-full bg-teal-600 hover:bg-teal-500 py-2 font-bold ">SELECT</button>
+                    <button onclick="addPlayerName(this)"
+                        class="text-white w-full bg-teal-600 hover:bg-teal-500 py-2 font-bold ">SELECT</button>
                 </div>
             </div>
-            
+
             <!-- card 3.2 -->
             <div class="max-w-sm bg-black overflow-hidden shadow-lg">
                 <img class="w-full" src="images/peredes600x700.jpg" alt="Sunset in the mountains">
                 <div class="px-6 py-4">
-                    <div class="font-bold text-3xl text-white mb-2 text-center">Leonrdo peredes</div>
+                    <div class="font-bold text-3xl text-white mb-2 text-center">peredes</div>
                     <div class="flex justify-center">
                         <div class="text-base mb-4 text-gray-400">
                             <!-- <p style="vertical-align:middle ;">36 goal . 120 assists</p> -->
-                            <label><p class="middle inline">14 goal</p></label>
+                            <label>
+                                <p class="middle inline">14 goal</p>
+                            </label>
                             <label><a class="middle " href="#">6 assist</a></label>
                         </div>
                     </div>
-                    <button class="text-white w-full bg-teal-600 hover:bg-teal-500 py-2 font-bold ">SELECT</button>
+                    <button onclick="addPlayerName(this)"
+                        class="text-white w-full bg-teal-600 hover:bg-teal-500 py-2 font-bold ">SELECT</button>
                 </div>
             </div>
             <!-- card 3.3 -->
             <div class="max-w-sm bg-black overflow-hidden shadow-lg">
                 <img class="w-full" src="images/reneto-senches600x700.jpg" alt="Sunset in the mountains">
                 <div class="px-6 py-4">
-                    <div class="font-bold text-3xl text-white mb-2 text-center">Reneto Senches</div>
+                    <div class="font-bold text-3xl text-white mb-2 text-center">Reneto</div>
                     <div class="flex justify-center">
                         <div class="text-base mb-4 text-gray-400">
                             <!-- <p style="vertical-align:middle ;">36 goal . 120 assists</p> -->
-                            <label><p class="middle inline">10 goal</p></label>
+                            <label>
+                                <p class="middle inline">10 goal</p>
+                            </label>
                             <label><a class="middle " href="#">10 assist</a></label>
                         </div>
                     </div>
-                    <button class="text-white w-full bg-teal-600 hover:bg-teal-500 py-2 font-bold ">SELECT</button>
+                    <button onclick="addPlayerName(this)"
+                        class="text-white w-full bg-teal-600 hover:bg-teal-500 py-2 font-bold ">SELECT</button>
                 </div>
             </div>
         </div>
     </section>
     <!-- card section ended  -->
 
+    <script src="js files/app.js"></script>
 </body>
 <!-- footer  -->
 <footer>
