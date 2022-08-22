@@ -32,7 +32,28 @@ function addPlayerName(element) {
 
     if(nameBox.length > 5){
         alert('You can not selected more than Five');
-        return ;
+        return;
     }
     
+}
+
+// function for get input field value 
+function inputField(inputId){
+    const inputFieldElement = document.getElementById(inputId);
+    const inputFieldString = inputFieldElement.value;
+    const inputFieldAmount = parseFloat(inputFieldString);
+    return inputFieldAmount;
+}
+// function for getting element value 
+function elementField(elementId){
+    const element = document.getElementById(elementId);
+    const elementString = element.innerText;
+    const elementValue = parseFloat(elementString);
+    return elementValue; 
+}
+
+// function for calcute expense button 
+function calcuteExpense(){
+    const totalnames = nameBox.length;
+    const perPlayerAmount = 
 }
