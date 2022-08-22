@@ -1,3 +1,4 @@
+
 const nameBox = [];
 
 
@@ -35,7 +36,7 @@ function addPlayerName(element) {
     nameBox.push(pnames);
     displayname();
     element.setAttribute('disabled',true);
-
+    element.innerText = 'Selected';
     
     
 }
